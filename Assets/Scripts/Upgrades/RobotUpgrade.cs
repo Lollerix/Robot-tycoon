@@ -84,7 +84,6 @@ public class RobotUpgrade : MonoBehaviour
         }
         lastShape = shapeNum;
 
-
     }
 
 
@@ -93,7 +92,7 @@ public class RobotUpgrade : MonoBehaviour
     //0 clock 1 anti-clock
     public void Rotate90(int dir)
     {
-        if (dir == 0)
+        if (dir == 0) //Clock
         {
 
             for (int i = 0; i < cells.Length; i++)
@@ -108,7 +107,7 @@ public class RobotUpgrade : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z - yRotation);
 
         }
-        else if (dir == 1)
+        else if (dir == 1) //anti-clock
         {
             for (int i = 0; i < cells.Length; i++)
             {
